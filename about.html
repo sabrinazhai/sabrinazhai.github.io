@@ -3,10 +3,35 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Sabrina Zhai :: About</title>
+    <title>Sabrina Zhai</title>
     <meta name="description" content="">
     <meta name="msapplication-tap-highlight" content="yes" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,600,700|Frank+Ruhl+Libre:700" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="dist/js/main.min.js"></script>
+    
+
+    <!-- Imported from old nav bar  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- (bootstrap website startfiles) -->
+
+    <!-- /container -->
+    <script src="js/classie.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <script src="js/modernizer.custom.js"></script>
 
     <!-- Google Web Font -->
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
@@ -42,8 +67,8 @@
     <link rel="stylesheet" href="css/loader-1.css">
 
     <!-- Costum Styles -->
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- Favicon -->
     <link rel="icon" type="image/ico" href="favicon.ico">
@@ -57,415 +82,331 @@
     <!-- Preloader -->
     <div class="cover"></div>
 
+
     <div class="header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <p>SABRINA ZHAI</p>
-                </a>
-            </div>
-            
-            <!-- Menu Hamburger (Default) -->
-            <button class="main-menu-indicator" id="open-button">
-                <span class="line"></span>
-            </button>
-            
-            <div class="menu-wrap">
-                <div class="menu-content">
-                <div class="navigation">
-                    <span class="pe-7s-close close-menu" id="close-button"></span>
-                   
+            <nav class = "navbar navbar-inverse">
+                <div class = "navbar-header">
+                    <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navigationBar">
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                    </button>
+
+                    <div class="logo">
+                        <a href="index.html"> <p>SABRINA ZHAI</p> </a>
+                    </div>
                 </div>
-                <nav class="menu">
-                    <div class="menu-list">
-                        <ul>
-                            <li class="menu-item-has-children"><a href="index.html">Work</a></li>
-                            <li class="menu-item-has-children"><a href="about.html">About</a></li>
-                            <li class="menu-item-has-children"><a href="resume.html">Resume</a></li>
-                        </ul>
-                    </div>
-                </nav>
 
-                <!-- <div class="hidden-xs">
-                
+                <div class = "collapse navbar-collapse" id = "navigationBar">
+                    <nav class="cl-effect-4">
+                        <!-- <ul style = "list-style-type: none; "> -->
+                            <ul class = "nav navbar-nav navbar-right">
+                                <li> <a href = "index">Design</a></li>
+                                <li><a href = "play">illustration</a></li>
+                                <li class = "active"><a href = "about">About</a></li>
+                            </ul>
 
-                    <div class="menu-information">
-                        <ul>
-                            <li><span>in:</span>@sabrinazhai</li>
-                            <li><span>e: </span> svz1999@gmail.com</li>
-                        </ul>
-                    </div>
-                </div> -->
-            </div>
-        </div>
+                        <!-- <ul class = "nav navbar-nav navbar-right">
+                            <li class = "active"> <a href = "index.html">Work</a></li>
+                            <li><a href = "play.html">Play</a></li>
+                            <li><a href = "about.html">About</a></li>
+                        </ul> -->
+                    </nav>
+                </div>
+            </nav>
             <!-- End of Menu Hamburger (Default) -->
-
         </div>
     </div>
     
 
-<!-- <div class="container">
-    <div class="header-page ef-parallax-bg" style="background-image:url(img/test.png)">
-        <div class="col-md-6 col-md-offset-6">
+
+    <div class="container margin-top">
+        <div class="main-title">
+            <h1>About</h1>
+            <hr>
+            <h6>interaction + experience + code</h6>
+        </div>
+        <div class="col-md-4">
             <div class="row">
-                <div class="inner-content">
-                    <div class="header-content">
-                        <h1>check</h1>
-                        <hr>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                <div class="services-home-page">
+                    <div class="col-md-12 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
 
-<div class="container margin-top">
-    <div class="main-title near-content">
-        <h1>WE ARE OAK AGENCY</h1>
-        <hr>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <p style="font-size: 18px; line-height: 26px;">Who loves or pursues or desires to <b>DESIGN</b> pain of itself,but because and occasionally circumstances occur pain can procure him some great easure of the past.</p>
-        </div>
-        <div class="col-md-4">
-            <p>THE CREATIVE qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima quis nostrum exercitationem ullam corporis suscipit aliquid.</p>
-        </div>
-        <div class="col-md-4">
-            <p><strong>WEB DESIGN</strong> qui dolorem ipsum quia dolor sit amet, MINIMALISM adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam</p>
-        </div>
-    </div>
-</div> -->
-
-
-<div class="container margin-top">
-        <div class="row">
-            <div class="services-home-page">
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                    <div class="row">
-                        <div class="services-icon">
-                            <span class="icon-tools"></span>
-                            <hr>
-                        </div>
-                        <h4>EXPERIENCE</h4>
-                        <p>I like comfortability. A great product means it's crucial to investigate how to achieving comfortability in the ways a user interacts with the product. </p>
-                    </div>
-                </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                        <div class="services-icon">
-                            <span class="icon-globe"></span>
-                            <hr>
-                        </div>
-                        <h4>PEOPLE</h4>
-                        <p>Human-centered design is exactly that — I pay attention to how human responses affects their enjoyment with a product and work from there.  </p>
-                <!-- </div> -->
-                </div>
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="row">
                         <div class="services-icon">
                             <span class="icon-paintbrush"></span>
                             <hr>
                         </div>
-                        <h4>ILLUSTRATION</h4>
-                        <p>I'm a visual person. I pay close attention to storytelling and the processes of flow. </p>
+                        <span class="subtitle">EXPERIENCE</span>
+                        <p>I like comfortability. A great product means it's crucial to investigate how an user interacts with the product and what makes them tick. I focus on designing ways that technology can better serve us and comfortable to thrive in.</p>
+
+                    </div>
+                    <div class="col-md-12 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                        <div class="services-icon">
+                            <span class="icon-tools"></span>
+                            <hr>
+                        </div>
+                        <span class="subtitle">STORIES</span>
+                        <p>Telling stories about the experiences that people have when interacting with emerging technologies and the feelings that they have is important to me in designing a product or service.</p>
+                    </div>
+
+                    <div class="col-md-12 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                        <div class="services-icon">
+                            <span class="icon-globe"></span>
+                            <!-- <hr> -->
+                        </div>
+                        <span class="subtitle">FIND ME</span>
+                        <p>If I'm not working, you can probably find me watching <a href = "https://www.youtube.com/playlist?list=PL8rNNnZcc04KogEntz5_g8cNTWsLajkJk">Super Mario Maker 2 speedruns</a>, listening to fan theory podcasts, and discovering tea shops with lots of sunlight <span style='font-size:25px;'>&#9788;</span> <br> </p>
                     </div>
                 </div>
             </div>
-        </div>  
-    </div>
-    <div class="container margin-top">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="our-story wow fadeInUp" style="background: url(img/me.jpg) no-repeat" data-wow-duration="0.5s" data-wow-delay="0.2s">
-                   <div class="col-md-6 col-md-offset-6">
-                        <div class="our-story-content wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-                            <div class="our-story-content-inner">
-                                <h1>about me</h1>
-                                <hr style  = "color: white">
-                                <p>
-                                    Interaction Designer + Coder 
-                                    <br><br>
-                                    I'm Sabrina, a second year Design and Human-Computer Interaction double major at Carnegie Mellon University. I want to create design that is centered around people, specifically finding ways that technology can better serve us, making life easier and comfortable to thrive in. I enjoy discovering the ways that decisions designers make can impact the user, and how these interactions plays a greater role in how our lives run.  
-                                    <br><br>
-                                    Outside of design, my interests include illustration and animation, reading, and finding tea shops with a lot of sunlight! 
-                                </p>
-                            </div>
-                        </div>
-                   </div>
-                </div>
+        </div>
+        <div class="col-md-7 col-md-offset-1">
+            <div class="our-story-image wow fadeInUp main-title" data-wow-duration="1s" data-wow-delay="1s">
+                <img src="img/About/Yellow.jpg" alt="Our Story">
+                <p>
+                <h6><big><a href = "/SabrinaZhai_Resume.pdf"> full resume here </a></big></h6>
             </div>
         </div>
     </div>
 
-    
 
-
-
-
-
-<!-- Resume section -->
-<div class="container margin-top">
-        <div class="row">
+    <!-- Resume section -->
+    <div class="container margin-top">
+        <!-- <div class="row"> -->
             <!-- <div class="services-home-page"> -->
                 <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
                     <div class="row">
-                        
-                        <bold><h4>EXPERTISE</h4></bold>
-                        
+
+                        <span class="subtitle"> expertise</span>
+
                     </div>
                 </div>
                 <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                    
-                        <p>Rapid Prototyping <br>
-                    User Research<br>
-                    Storyboarding<br>
-                    Wireframing<br>
-                    Motion Graphics<br>
+
+                    <p>Rapid Prototyping <br>
+                        User Research<br>
+                        Storyboarding<br>
+                        Wireframing<br>
+                        Illustration<br>
                     </p>
-                <!-- </div> -->
+                    <!-- </div> -->
                 </div>
-                 <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
                     <p>Java <br>
                         Python<br>
                         HTML/CSS<br>
                         JavaScript<br>
                         Processing<br>
-                        React Native<br>
                     </p>
                 </div>
-                 <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
                     <p>Adobe CC<br>
+                        Sketch<br>
                         Maya <br>
                         Fusion360<br>
                         SketchUp<br>
-                        Unity<br>
-                        </p>
+                    </p>
                 </div>
-                
             </div>
-        <!-- </div>  -->
 
-    </div>
-
-    <div class="container margin-top">
-        <div class="row">
-            <div class="services-home-page">
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                    <div class="row">
-                        
-                        <h4>EXPERIENCE</h4>
-                        
+            <!-- Experience -->
+            <div class="container margin-top">
+                <div class="services-home-page">
+                    <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                        <div class="row">
+                            <span class="subtitle"> experience </span>
+                        </div>
                     </div>
+                    <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+
+
+                        <h4>UI/UX Design Intern </h4>
+                        <h5> <i>TigerGraph</i></h5>
+                        <p>2019.5 - 2019.8 </p>
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                        <div class="row">
+
+                         <p>Designed the interaction patterns between functions and users to create simplified experiences of a graph analytics program.<br>
+                           Delivered low and high fidelity wireframes and prototypes to articulate functionality and user experience.<br>
+                       Collaborated with product developers to expand upon existing designs.</p>
+                   </div>
+               </div>
+           </div> 
+
+
+
+           <div class="services-home-page">
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                <div class="row">
                 </div>
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                    
-                        <h4>UI/UX Design Intern <br> TigerGraph</h4>
-                        <p>May 2019 - August 2019 </p>
+            </div>
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+
+                <h4>Design Intern </h4>
+                <h5><i>All Set Concierge</i></h5>
+                <p> 2019.3 - 2019.8</p>
                 <!-- </div> -->
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                <div class="row">
+
+                    <p>Utilized web analytics and user research to critically review current company site design.
+                    Designed with an awareness and understanding towards device capabilities and product functionality.</p>
                 </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="row">
-                        
-                        <p>Redesigned main software, GraphStudio, with low and high fidelity wireframes. 
-                        Discussed designs with team and product managers for feedback. 
-                        Conducted competitive analysis in order to adequately evaluate the design. </p>
-                    </div>
+            </div>
+        </div>
+
+
+        <div class="services-home-page">
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                <div class="row">
+                    <br>
                 </div>
+            </div>
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                <h4>Design Lead Research Assissant </h4>
+                <h5><i>VR Home</i></h5>
+                <p> 2018.5 -  2018.12 </p>
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                <div class="row">
+                   <p>Interpreted research insights and built understanding of users and context.<br>
+                    Defined research scope and supported for variation of user contexts (culture, environment, and activity).
+                Delivered concept art for virtual reality spaces designed to emulate feelings of home.</p>
+            </div>
+        </div>
+    </div> 
+
+    <br><br>
+</div>
+
+<!-- Extracurriculars -->
+<div class="container margin-top">
+    <div class="services-home-page">
+        <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+            <div class="row">
+
+                <span class="subtitle"> extracurriculars</span>
+
+            </div>
+        </div>
+        <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+
+            <h4>Mobile App Developer </h4>
+            <h5><i> Design For America</i></h5>
+            <p>2017.Fall - 2019.Spring</p>
+            <!-- </div> -->
+        </div>
+        <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+            <div class="row">
+
+                <p>Coded with React Native and Expo to develop a mobile app for a network of mentors and mentees.  
+                Collaborated with a partner to use design decks for software development.</p>
             </div>
         </div> 
 
 
-        <div class="row">
-            <div class="services-home-page">
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                    <div class="row">
-                        
-                        <!-- <h4>EXPERIENCE</h4> -->
-                        
-                    </div>
+
+        <div class="services-home-page">
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                <div class="row">
+
+                    <!-- <h4>EXPERIENCE</h4> -->
+
                 </div>
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                    
-                        <h4>Design Intern <br> All Set Concierge</h4>
-                        <p>March 2019 - August 2019 </p>
+            </div>
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+
+                <h4>Design Chair</h4>
+                <h5><i> Taiwanese Student Association</i></h5>
+                <p> 2018.10 - Present</p>
                 <!-- </div> -->
-                </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="row">
-                        
-                        <p>Analyzed and conducted research on company website. 
-                        Created moodboards to improve presentation of company values to partners. 
-                        Collected data to connect with potential clients.</p>
-                    </div>
+            </div>
+            <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                <div class="row">
+
+                    <p>Created promotional campaigns such as such as flyers, brochures, tickets, stickers for showcases, fundraisers, meetings events. 
+                    Designed towards a consistent brand image to meet executive team’s needs.</p>
                 </div>
             </div>
-        </div> 
+        </div>
 
-        <div class="row">
-            <div class="services-home-page">
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                    <div class="row">
-                        <br>
-                    </div>
-                </div>
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                        <h4>Design Research Assissant <br> VR Home</h4>
-                        <p>May 2018 - Dec 2018 </p>
-                </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="row">
-                        
-                        <p>Created design decks conceptual ideas for virtual reality spaces, intended to emulate feelings of home. 
-                             Worked with two professors in team of concept artists and software developers.</p>
-                    </div>
+
+
+        <div class="services-home-page">
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
+                <div class="row">
+                    <br>
                 </div>
             </div>
-        </div> 
-    </div>
-
-    <!-- Extracurriculars -->
-    <div class="container margin-top">
-        <div class="row">
-            <div class="services-home-page">
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                    <div class="row">
-                        
-                        <h4>EXTRACURRICULARS</h4>
-                        
-                    </div>
-                </div>
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                    
-                        <h4>Mobile App Developer <br> Design for America</h4>
-                        <p>Fall 2017 - Present</p>
-                <!-- </div> -->
-                </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="row">
-                        
-                        <p>Coded with React Native and Expo to develop a mobile app for a network of mentors and mentees.  
-                        Collaborated with a partner to use design decks for software development.</p>
-                    </div>
-                </div>
+            <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                <h4>Graphic Designer</h4>
+                <h5><i>HackingEDU</i></h5>
+                <p> 2016.Fall - 2017.Winter </p>
             </div>
-        </div> 
+            <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+                <div class="row">
 
-
-        <div class="row">
-            <div class="services-home-page">
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                    <div class="row">
-                        
-                        <!-- <h4>EXPERIENCE</h4> -->
-                        
-                    </div>
-                </div>
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                    
-                        <h4>Design Chair</h4> <br> <h5>Taiwanese Student Association</h5>
-                        <p>Oct 2018 - Present</p>
-                <!-- </div> -->
-                </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="row">
-                        
-                        <p>Created promotional campaigns such as such as flyers, brochures, tickets, stickers for showcases, fundraisers, meetings events. 
-                        Designed towards a consistent brand image to meet executive team’s needs.</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <div class="row">
-            <div class="services-home-page">
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.2s" data-wow-delay="0.2s">
-                    <div class="row">
-                        <br>
-                    </div>
-                </div>
-                <div class="col-md-3 wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4s">
-                        <h4>Graphic Designer <br> HackingEDU</h4>
-                        <p> Fall 2016 - Winter 2017 </p>
-                </div>
-                <div class="col-md-6 wow fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
-                    <div class="row">
-                        
-                        <p>
+                    <p>
                         Designed campaign for training events, collaborated with executives, developers, public relations, and product managers. 
                         Organized training event for high school and college students.
-                        Acted as head photographer for a 200+ attendee hackathon.</p>
-                    </div>
+                    Acted as head photographer for a 200+ attendee hackathon.</p>
                 </div>
             </div>
-        </div> 
-    </div>
-
- 
+        </div>
 
 
-
-        
-
-    
+        <br><br>
     </div>
 
 
 
 
-<!-- <div class="container margin-top">
-    <div class="clients-wrapper">
-        <ul class="client-thumb">
-            <li><a href="#"><img src="img/clients/client_1.jpg" alt="Client 1"></a></li>
-            <li><a href="#"><img src="img/clients/client_2.jpg" alt="Client 1"></a></li>
-            <li><a href="#"><img src="img/clients/client_3.jpg" alt="Client 1"></a></li>
-            <li><a href="#"><img src="img/clients/client_4.jpg" alt="Client 1"></a></li>
-        </ul>
-    </div>
 </div>
- -->
 
 
-    
 
-    <div class="footer margin-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-2 col-xs-12"></div>
-                
 
-                <div class="col-md-6 col-sm-8 col-xs-12">
-                    <div class="footer-inner">
-                        <div class="footer-content">
-                            <ul class="social-media">
-                                <li><a href="mailto:svz1999@gmail.com?subject=Regarding%20your%20portfolio"><i class="iconmoon-mail"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/sabrinazhai/"><i class="iconmoon-linkedin2"></i></a></li>
-                            </ul>
-                            <p><span class="copyright-mark">&copy; 2019 Sabrina Zhai. All Rights Reserved.<br>Use developer tools to see complete citation.</span></p>
-                        </div>
+<div class="footer margin-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-xs-12"></div>
+
+
+            <div class="col-md-6 col-sm-8 col-xs-12">
+                <div class="footer-inner">
+                    <div class="footer-content">
+                        <ul class="social-media">
+                            <li><a href="mailto:svz1999@gmail.com?subject=Regarding%20your%20portfolio"><i class="iconmoon-mail"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/sabrinazhai/"><i class="iconmoon-linkedin2"></i></a></li>
+                        </ul>
+                        <p><span class="copyright-mark">&copy; 2020 Sabrina Zhai. All Rights Reserved.<br>Use developer tools to see complete citation.</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <a href="javascript:void(0)" class="scroll-top" id="scroll-top"><i class="pe-7s-angle-up"></i></a>
+</div>
+<a href="javascript:void(0)" class="scroll-top" id="scroll-top"><i class="pe-7s-angle-up"></i></a>
 
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <script data-pace-options='{ "ajax": false }' src="js/vendor/pace.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/classie.js"></script>
-    <script src="js/vendor/isotope.pkgd.min.js"></script>
-    <script src="js/vendor/jquery.velocity.min.js"></script>
-    <script src="js/vendor/jquery.kenburnsy.min.js"></script>
-    <script src="js/vendor/textslide.js"></script>
-    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src="js/vendor/tabs.js"></script>
-    <script src="js/ef-slider.js"></script>    
-    <script src="js/vendor/owl.carousel.min.js"></script>
-    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
-    <script src="js/vendor/jquery.social-buttons.min.js"></script>
-    <script src="js/vendor/wow.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/ajax.js"></script>
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script data-pace-options='{ "ajax": false }' src="js/vendor/pace.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/classie.js"></script>
+<script src="js/vendor/isotope.pkgd.min.js"></script>
+<script src="js/vendor/jquery.velocity.min.js"></script>
+<script src="js/vendor/jquery.kenburnsy.min.js"></script>
+<script src="js/vendor/textslide.js"></script>
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="js/vendor/tabs.js"></script>
+<script src="js/ef-slider.js"></script>    
+<script src="js/vendor/owl.carousel.min.js"></script>
+<script src="js/vendor/jquery.magnific-popup.min.js"></script>
+<script src="js/vendor/jquery.social-buttons.min.js"></script>
+<script src="js/vendor/wow.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/ajax.js"></script>
 </body>
 </html>

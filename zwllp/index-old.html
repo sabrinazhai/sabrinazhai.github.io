@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Website Tutorial</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<!-- navigation bar -->
+	<nav class = "navbar navbar-inverse">
+		<div class = "container">
+			<div class = "navbar-header">
+				<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#navigationBar">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+				<a class = "navbar-logo" href= "index.html"> <img src = "img/logo size.png"></a>
+			</div>
+			<div class = "collapse navbar-collapse" id = "navigationBar">
+				<ul class = "nav navbar-nav navbar-right">
+					<!-- <li class = "active"> <a href = "#">Home</a></li> -->
+					<li><a href = "about.html">About</a></li>
+					<li><a href = "services.html">CPA Services</a></li>
+					<li><a href = "financial.html">Financial Services</a></li>
+					<li><a href = "resources.html">Resources</a></li>
+					<li><a href = "events.html">Marketing</a></li>
+					<!-- <li><a href = "contact.html">Contact</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- image slider -->
+	<div id = "imageSlider" class = "carousel slide" data-ride = "carousel">
+		<ol class = "carousel-indicators">
+			<li data-target = "#imageSlider" data-slide-to = "0" class = "active"></li>
+			<li data-target = "#imageSlider" data-slide-to = "1"></li>
+			<li data-target = "#imageSlider" data-slide-to = "2"></li>
+		</ol>
+
+		<div class = "carousel-inner" role = "listbox">
+			<div class = "item active">
+			<img src = "img/mountains.png">
+			<div class = "carousel-caption">
+				<h1> testing testing testing</h1>
+				<br>
+				<button type = "button" class = "btn btn-default"> Learn More </button>
+			</div>
+			</div> <!-- end active -->
+
+			<!-- second image -->
+			<div class = "item">
+				<img src = "img/snow.png">
+			</div>
+
+			<!-- third image -->
+			<div class = "item">
+				<img src = "img/red.png">
+			</div>
+		</div>
+		<!-- start slider controls -->
+		<a class = "left carousel-control" href = "#imageSlider" role = "button" data-slide = "prev"> 
+		<span class = "glyphicon glyphicon-chevron-left" aria-hidden = "true"></span>
+		<span class = "sr-only">Back</span>
+		</a>
+
+		<a class = "right carousel-control" href = "#imageSlider" role = "button" data-slide = "next"> 
+		<span class = "glyphicon glyphicon-chevron-right" aria-hidden = "true"></span>
+		<span class = "sr-only"> Next</span>
+		</a>
+	</div>
+	<!-- end slider -->
+	<br>
+	<br>
+
+	<!-- center your text w html instead of css -->
+	<div class = "container text-center"> 
+		<h2> What We Do </h2>
+		<br>
+		<br>
+		<div class = "row">
+			<div class = "col-sm-4 ">
+				<img src = "img/accounting.png" id = "icon"> 
+				<h4> Accounting</h4>
+				<p class = "service-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque congue diam. Phasellus mattis velit vel porttitor pharetra. </p>
+			</div>
+
+			<div class = "col-sm-4">
+				<img src = "img/tax.png" id = "icon">
+				<h4> Tax</h4>
+				<p class = "service-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque congue diam. Phasellus mattis velit vel porttitor pharetra. </p>
+			</div>
+
+			<div class = "col-sm-4">
+				<img src = "img/financialplanning.png" id = "icon">
+				<h4> Financial Planning</h4>
+				<p class = "service-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pellentesque congue diam. Phasellus mattis velit vel porttitor pharetra.  </p>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<div class = "container">
+		<h2><center> Why Choose Us?</center> </h2>
+		<div class = "row">
+			<div class = "col-md-6">
+				<h4> Firm Profile</h4>
+				<p> Zhai & Wang, LLP is a Silicon Valley based tax, accounting and financial advisory related professional service firm. It specializes in small and mid-size company’s accounting, tax return preparation, tax planning, and financial statement compilation, review and auditing. No matter it is for helping start-ups acquire venture funding, bank loan or rendering continuous controllership advisory service, Zhai & Wang, LLP has extensive experience in the areas. With strong knowledge in tax planning and systematic approaches in financial planning, Zhai & Wang, LLP enhances its clients’ high net worth through well design practices like wealth accumulation, assets protection, tax avoidance and financial advisory.</p>
+
+				</p>
+			</div>
+			<div class = "col-md-6">
+				<h4> Our Clients </h4>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque laoreet nulla et eleifend. Proin ornare egestas orci in consectetur. Nulla ultricies et ex quis tincidunt. Suspendisse cursus ex neque, in pharetra lorem facilisis sed. Mauris a ipsum nec tellus posuere egestas vitae nec dolor. In et libero consectetur, pharetra ligula et, posuere urna. Quisque pharetra erat dictum, vehicula erat vitae, sodales ligula. In sagittis dui libero, in eleifend diam pretium non. Nullam viverra finibus ultricies. Nam ornare iaculis velit, et consectetur leo elementum nec. Praesent ornare libero vel elementum tincidunt.</p>
+
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+
+
+	<div class = "container">
+		<h4> Hello Hello Testing Testing... </h4>
+		<div class = "row">
+			<div class = "col-md-6">
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pellentesque laoreet nulla et eleifend. Proin ornare egestas orci in consectetur. Nulla ultricies et ex quis tincidunt. Suspendisse cursus ex neque, in pharetra lorem facilisis sed. Mauris a ipsum nec tellus posuere egestas vitae nec dolor. In et libero consectetur, pharetra ligula et, posuere urna. Quisque pharetra erat dictum, vehicula erat vitae, sodales ligula. In sagittis dui libero, in eleifend diam pretium non. Nullam viverra finibus ultricies. Nam ornare iaculis velit, et consectetur leo elementum nec. Praesent ornare libero vel elementum tincidunt.</p>
+				<p>
+				Nam nunc sapien, eleifend commodo elit eu, dictum faucibus sapien. Sed efficitur interdum ante ut venenatis. Mauris commodo imperdiet odio, luctus lacinia enim porta sit amet. Aliquam justo libero, auctor ac mollis et, pulvinar non turpis. Fusce ut rhoncus tortor, quis cursus leo. Donec pellentesque fringilla fringilla. Morbi pellentesque, sem nec semper elementum, dui enim commodo erat, eu semper ligula felis consequat purus. Donec porta arcu risus, vitae rutrum metus ullamcorper non. Phasellus placerat lacinia tellus. Aenean ornare erat vitae viverra tristique. Curabitur finibus sodales pretium. Ut laoreet commodo urna, vel varius turpis commodo quis. Vivamus diam libero, ultricies in sem vitae, finibus pharetra orci. Sed metus lacus, pellentesque in leo eu, hendrerit tincidunt urna. Morbi non nulla in leo imperdiet dignissim.
+				</p>
+			</div>
+			<div class = "col-md-6">
+				<img src = "img/bootstrap2.jpg" class = "img-responsive">
+			</div>
+		</div>
+	</div>
+
+	
+	<br><br>
+
+	
+
+	<footer class = "container-fluid">
+		<footer class = "container">
+			<!-- <a class = "navbar-logo" href= "index.html"> <img src = "img/logo size.png"></a> -->
+			<br>
+
+			<div class = "row">
+				
+
+	        	<div class = "col-sm-3">
+	        		<h4> Contact Us </h4>
+					
+						<b>Phone number</b><br>
+						(408) 383-9870 ext. 1
+
+						<br><br>
+						<strong> Address</strong> <br>
+						2051 Junction Ave<br>
+						San Jose, CA <br>
+						95131<br>
+						<br>
+						
+				
+
+	        		<!-- <p>Home | About | Services | Resources | Events | Contact | Privacy Policy</p> -->
+	        		
+	                    
+	        	</div>
+	        	<div class = "col-sm-4">
+	        		<h4> Site Map </h4>
+	        		<a href = "index.html">Home</a><br>
+					<a href = "about.html">About</a><br>
+					<a href = "services.html">Services</a><br>
+					<a href = "resources.html">Resources</a><br>
+					<a href = "contact.html">Contact</a><br>
+
+	        	</div>
+	        	<div class = "col-sm-offset-2 col-sm-3 text-right">
+					<a href = "#" class = "fa fa-facebook"></a> <!-- <br> -->
+						<a href = "#" class = "fa fa-twitter"></a><!--  <br> -->
+						<a href = "#" class = "fa fa-linkedin"></a> <!-- <br> -->
+						<a href = "#" class = "fa fa-youtube"></a><!--  <br> -->
+					
+				</div>
+			</div>
+			<br>
+			<center><p> <small> <!-- Designed and developed by Sabrina Zhai.  -->All Rights Reserved © 2019 </small> </p></center>
+			
+		</footer>
+	</footer>
+
+
+</body>
+</html>
