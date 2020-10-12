@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fluff Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body>
+    <div class = "mini-banner">
+        <p>Take 10% off sitewide. Code applied at checkout. </p>
+    </div>
+    
+
+    <div class="navbar" id = "navigationbar">
+        <a href="index.html"><i class="far fa-clone"></i> Fluff Stuff</a>
+        <a href="product-page.html">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href=""><i class="fas fa-search"></i><input type="text" placeholder="Search..."></a>
+        <a href="#"><i class="fas fa-shopping-bag"></i> Cart </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+
+    <div class = "container">
+        <div class="hero-image">
+            <div class="hero-text">
+                <div class = "row">
+                    <h1>Softest Pillows</h1>
+                    <button class = "button">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class = "bio">
+            <h2>Hi, we’re Fluff Stuff! </h2>
+            <br><br>
+            <p>Really good pillow with really good prices. How do we do it? 
+                By cutting out the middleman and passing the best savings right to you. <br>
+                <br>
+            But don’t take it from us, take it from our customers...</p>
+        </div>
+
+        <!-- <div class="row review"> -->
+        <div id = "review-grid">
+          <div>
+            <h2>Sara. B</h2>
+            <p>This pillow helps tip me over into a good deep sleep. Love it.</p>
+        </div>
+        <div>
+            <h2>Peter Kingsley</h2>
+            <p>Love my pillow so much my husband loves his too! So happy I discovered it.</p>
+        </div>
+        <div>
+            <h2>Anonymous.</h2>
+            <p>Love this pillow! Perfect for my picky husband.</p>
+        </div>
+    </div>
+
+    <div class = "review-button">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</div>
+
+<footer>
+  <div class="row">
+      <div class="column">
+        <h2>Additional Links</h2>
+        <hr>
+        <p>All products <br>
+            Search <br>
+            About us <br>
+            Exchanges and Refunds <br>
+            Shipping Policy <br>
+        Contact Us</p>
+    </div>
+    <div class="column">
+        <h2>Social Media</h2>
+        <hr>
+        <p>Instagram <br>
+            Facebook <br>
+            Twitter <br>
+        Pinterest</p>
+    </div>
+    <div class="column">
+        <h2>Let’s stay in touch.</h2>
+        <form>
+          <input type="text" id="fname" name="fname" value="Email Address">
+          <button><i class='fas fa-arrow-right'></i></button>
+      </form>
+      <p>Sign up for exclusive updates, our newsletter and more!</p>
+      <br>
+      <p> <small>Fluff Stuff ©2020 </small></p>
+  </div>
+</div>
+</footer>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("navigationbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+</script>
+</body>
+</html>
