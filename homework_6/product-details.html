@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fluff Stuff</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+    <div class = "mini-banner">
+        <p>Take 10% off sitewide. Code applied at checkout. </p>
+    </div>
+    
+
+    <div class="navbar" id = "navigationbar">
+        <a href="index.html"><i class="far fa-clone"></i> Fluff Stuff</a>
+        <a href="product-page.html">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <div><i class="fas fa-search"></i><input type="text" placeholder="Search..."></div>
+        <a href="cart.html"><i class="fas fa-shopping-bag"></i> <span id = "cart">Cart </span></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    
+
+    <div class = "container">
+
+        <div class="outer-grid">
+          <div><img id="product-photo" alt = "Bed Pillow" src="img/photo1.png"/>
+              <div class = "review-button">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div id="inner-grid">
+            <h1>Bed Pillow</h1>
+            <div></div>
+            <h2>Color</h2>
+            <div></div>
+            <button data-name = "1" value = "afterschoolspecial" class = "colors selected"> After School Special </button>
+            <button data-name = "2" value = "morninghaze" class = "colors"> Morning Haze </button>
+            <button data-name = "3" value = "cozydenim" class = "colors"> Cozy Denim </button>
+            <button data-name = "4" value = "rainyday" class = "colors"> Rainy Day </button>
+            <h2>Fill</h2>
+            <div></div>
+            <button class = "fill selected"> Duck Down </button> 
+            <button class = "fill"> Memory Foam </button>
+            <button class = "fill"> Hypoallergenic Poly-blend </button>
+            <div></div>
+            <div></div>
+            <div></div>
+            <input type="text" id="quantity" value="1"> 
+            <div class="option active" onclick="addToCart()">Add to Cart</div>
+        </div>
+    </div>
+    
+
+    <div class = "outer-grid">
+        <div class="option active">DETAILS</div>  
+        <div class="option">REVIEWS</div>
+    </div>
+    <div class = "info">
+      <p>Our Down Pillows are super soft, yet extremely supportive, and we have three different constructions so you can find the perfect fit. The Plush Pillow is completely filled with Down clusters, and is our softest and fluffiest. We recommended this Pillow for stomach sleepers. The Mid-Plush Pillow has a dual-core structure with an extra supportive inner layer of feathers, and a super comfy outer layer of Down clusters. This option is our best seller and most versatile Pillow. Our Firm Pillow has the same dual-core construction as the Mid-Plush, but with a higher ratio of feathers to clusters. The Firm Pillow is our most supportive and has the high quality firmness recommended for side sleepers.
+
+        <br>
+        <br>
+
+        Down clusters and feathers filling with a 100% Cotton Sateen Shell<br>
+        Treated with Ultra-Fresh Antimicrobials<br>
+        Durable, Double-stitched Edges<br>
+    Made in Canada</p>
+</div>
+
+</div>
+
+
+<footer>
+  <div class="row">
+      <div class="column">
+        <h2>Additional Links</h2>
+        <hr>
+        <p>All products <br>
+            Search <br>
+            About us <br>
+            Exchanges and Refunds <br>
+            shipping Policy <br>
+        Contact Us</p>
+    </div>
+    <div class="column">
+        <h2>Social Media</h2>
+        <hr>
+        <p>Instagram <br>
+            Facebook <br>
+            Twitter <br>
+            Pinterest</p>
+    </div>
+    <div class="column">
+        <h2>Let’s stay in touch.</h2>
+        <form>
+          <input type="text" id="fname" name="fname" value="Email Address">
+          <button><i class='fas fa-arrow-right'></i></button>
+      </form>
+      <p>Sign up for exclusive updates, our newsletter and more!</p>
+      <br>
+      <p> <small>Fluff Stuff ©2020 </small></p>
+  </div>
+</div>
+</footer>
+
+
+</body>
+</html>
