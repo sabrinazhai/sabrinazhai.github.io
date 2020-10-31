@@ -20,20 +20,20 @@
         <a href="product-page.html">Shop</a>
         <a href="#">About</a>
         <a href="#">Contact Us</a>
-        <div><i class="fas fa-search"></i><input type="text" placeholder="Search..."></div>
-        <a href="#"><i class="fas fa-shopping-bag"></i> <span id = "cart">Cart </span></a>
+        <a href=""><i class="fas fa-search"></i><input type="text" placeholder="Search..."></a>
+        <a href="#"><i class="fas fa-shopping-bag"></i> Cart </a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
 
     </div>
 
-    
+
 
     <div class = "container">
 
         <div class="outer-grid">
-          <div><img id="product-photo" alt = "Bed Pillow" src="img/photo1.png"/>
+          <div><img id="product-photo" alt = "Bed Pillow" src="img/product-photo.png"/>
               <div class = "review-button">
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -45,20 +45,20 @@
             <div></div>
             <h2>Color</h2>
             <div></div>
-            <button data-name = "1" value = "afterschoolspecial" class = "colors selected"> After School Special </button>
-            <button data-name = "2" value = "morninghaze" class = "colors"> Morning Haze </button>
-            <button data-name = "3" value = "cozydenim" class = "colors"> Cozy Denim </button>
-            <button data-name = "4" value = "rainyday" class = "colors"> Rainy Day </button>
+            <div class="option"> After School Special</div>
+            <div class="option">Morning Haze</div>
+            <div class="option">Cozy Denim</div>
+            <div class="option">Rainy Day</div>
             <h2>Fill</h2>
             <div></div>
-            <button class = "fill selected"> Duck Down </button> 
-            <button class = "fill"> Memory Foam </button>
-            <button class = "fill"> Hypoallergenic Poly-blend </button>
+            <div class="option">Duck Down</div>  
+            <div class="option">Memory Foam</div>
+            <div class="option">Hypoallergenic Poly-blend</div>
             <div></div>
             <div></div>
             <div></div>
             <input type="text" id="quantity" value="1"> 
-            <div class="option active" onclick="addToCart()">Add to Cart</div>
+            <div class="option active">Add to Cart</div>
         </div>
     </div>
     
@@ -116,52 +116,6 @@
 </footer>
 
 <script>
-    var cartArray = [];
-
-    window.onload = function(){
-        const colorsButtons = document.getElementsByClassName("colors");
-        const fillButtons = document.getElementsByClassName("fill");
-        const image = document.getElementById("product-photo");
-
-        for (let i = 0; i < colorsButtons.length; i++) {
-            let btn = colorsButtons[i];
-
-            btn.addEventListener('click', function(){
-                document.querySelector(".colors.selected").classList.remove('selected');
-                this.classList.add("selected");
-    
-                image.src = "img/photo" + this.dataset.name + ".png";
-            });
-        }
-
-        for (let i = 0; i < fillButtons.length; i++) {
-            let btn = fillButtons[i];
-
-            btn.addEventListener('click', function(){
-                document.querySelector(".fill.selected").classList.remove('selected');
-                this.classList.add("selected");
-            });
-        }
-
-
-    }
-
-    function addToCart(){
-        var colorValue = document.querySelector(".colors.selected").innerHTML; 
-        var fillValue = document.querySelector(".fill.selected").innerHTML; 
-        var currentItem = {
-            color: colorValue,
-            fill: fillValue
-        }
-        cartArray.push(currentItem);
-        console.log("currently:" + cartArray.length)
-
-        if (cartArray.length > 0){
-            document.getElementById("cart").innerHTML = cartArray.length + "cart";
-        }
-
-    }
-
     function myFunction() {
       var x = document.getElementById("navigationbar");
       if (x.className === "navbar") {

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 *{
 	/*font-family: 'Space Mono', monospace;*/
 	font-family: 'Inconsolata', monospace;
@@ -12,9 +14,11 @@ body{
 
 p{
 	/*font-family: 'Space Mono', monospace;*/
-	font-family: 'Inconsolata', monospace;
+	/*font-family: 'Inconsolata', monospace;*/
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 1em;
 	margin: 0;
+	line-height: 1.25em;
 }
 
 h1{
@@ -49,7 +53,7 @@ a {
 	/*display: inline;*/
 }
 
-.navbar a{
+.navbar a, .navbar > div {
 	float: left;
 	display: block;
 	color: black;
@@ -77,6 +81,22 @@ a {
 	font-size: 1em;
 	text-transform: uppercase;
 	color: black !important;
+	outline-color: transparent;
+}
+
+
+input[type=text] {
+	height: 50px;
+	padding: 12px 20px;
+	margin: 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: white;
+	color: black;
+}
+
+input[type=text]{
+	outline: 1px solid black;
 }
 
 input::placeholder {
@@ -85,12 +105,28 @@ input::placeholder {
 
 input[type=text]:focus {
 	color: black;
-	outline: none !important;
-	border-bottom:1px solid #F6D070;
+	/*outline: none !important;*/
+	/*border-bottom:1px solid #F6D070;*/
 }
 input:focus::placeholder {
 	color: transparent;
 }
+
+input[type=number]{
+	padding: 10px;
+	margin-top: 1em;
+	outline: .5px solid black;
+}
+
+input[type=number]:focus{
+	outline: .5px solid black;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
 .container{
 	margin-left: 10%;
 	margin-right: 10%;
@@ -107,8 +143,6 @@ input:focus::placeholder {
 	background-image: url("img/hero-image.png");
 	width: 100%;
 	height: 400px;
-
-	/* Position and center the image to scale nicely on all screens */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -124,7 +158,6 @@ input:focus::placeholder {
 	margin-bottom: 3em;
 }
 
-/* Place text in the middle of the image */
 .hero-text {
 	text-align: left;
 	position: absolute;
@@ -172,8 +205,31 @@ input:focus::placeholder {
 	column-gap: 10px;
 }
 
-.column + .column {
-	margin-left: 1%;
+section {
+  margin: 0 auto;
+  display: flex;
+}
+
+.col {
+  padding-right: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.col:first-of-type {
+  flex-grow: 1;
+  flex-shrink: 2;
+  flex-basis: 0;
+}
+
+.col:last-of-type {
+  flex-shrink: 3;
+  flex-basis: 0;
+}
+
+.suggested-items > img{
+ 	width: 50%;
 }
 
 #review-grid{
@@ -238,8 +294,12 @@ input:focus::placeholder {
 	outline: 1px solid black;
 	text-align: center;
 	vertical-align: middle;
+	text-transform: uppercase;
 	padding: 10px 0;
-	font-size: 1.2em;
+	font-size: 1.5em;
+	border: none;
+	margin: 0;
+	display: inline;
 }
 
 .active{
@@ -302,15 +362,6 @@ hr{
 	clear: both;
 }
 
-input[type=text] {
-	height: 50px;
-	padding: 12px 20px;
-	margin: 0;
-	box-sizing: border-box;
-	border: none;
-	background-color: white;
-	color: black;
-}
 
 form{
 	display: inline-block;
@@ -329,6 +380,23 @@ button{
 	display: inline;
 	padding: 10px;
 
+}
+
+#inner-grid button{
+	color: black;
+	background-color: white;
+	outline: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 0;
+	font-size: 1.2em;
+	text-transform: capitalize;
+}
+
+/*get rid of this line of code when youu get the js clicked button to work*/
+/*#inner-grid button:hover,*/
+#inner-grid .selected{
+	background-color: #F6D070;
 }
 
 form button {
