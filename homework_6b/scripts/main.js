@@ -27,7 +27,7 @@ window.onload = function(){
     }
     retrieveCart();
     updateCart();
-    removeItem();
+    // removeItem();
 }
 
 //Retrieving cart information from local stroage
@@ -100,28 +100,30 @@ function updateCart(){
             div.appendChild(detail);  
             div.appendChild(btn);
             
-
-            // btn.addEventListener("click", function(){
-            //     cartArray.splice(i,1);
-            //     updateArray(cartArray);
-            // })
-            
+            btn.addEventListener("click", function(){
+                cartArray.splice(i,1);
+                updateArray(cartArray);
+                location.reload();
+            });
         }
     }
 }
 
-function removeItem(){
-    var buttonList = document.getElementsByClassName("remove-item");
-    for (var i = 0; i < buttonList.length; i++) {
-        buttonList[i].addEventListener("click", function(){
-            console.log("are wee working");
-            cartArray.splice(i,1);
-            updateArray(cartArray);
-            // buttonList[i].parentElement.dataset.value
-        });
-    }
-    updateCart();
-}
+// function removeItem(){
+//     var buttonList = document.getElementsByClassName("remove-item");
+//     for (var i = 0; i < buttonList.length; i++) {
+//         console.log(buttonList[i].innerHTML);
+//         buttonList[i].innerHTML = "what";
+//         buttonList[i].addEventListener("click", function(){
+//             console.log("are wee working");
+//             cartArray.splice(i,1);
+//             updateArray(cartArray);
+//             updateCart();
+//             // buttonList[i].parentElement.dataset.value
+//         });
+//     }
+//     updateCart();
+// }
 
 function myFunction() {
     var x = document.getElementById("navigationbar");
