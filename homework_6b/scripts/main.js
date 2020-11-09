@@ -104,6 +104,7 @@ function updateCart(){
         btn.addEventListener("click", function(){
             cartArray.splice(i,1);
             updateArray(cartArray);
+            location.reload();
         })
         
     }
