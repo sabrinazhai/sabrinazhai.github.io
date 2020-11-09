@@ -33,11 +33,9 @@ window.onload = function(){
 function retrieveCart(){
     if (typeof(Storage) !== "undefined") { 
         if("shoppingCart" in localStorage){
-            console.log("stored:" + localStorage.getItem("shoppingCart"));
             cartArray = JSON.parse(localStorage.getItem("shoppingCart"));
         }
     }
-
     updateQuantity();
 }
 
@@ -69,7 +67,7 @@ function addToCart(){
 }
 
 function updateArray(arr){
-     if (typeof(Storage) !== "undefined") {  //Checking if storage is allowed
+     if (typeof(Storage) !== "undefined") {  
         localStorage.setItem("shoppingCart", JSON.stringify(arr));      
     } else {
       document.getElementById("result").innerHTML = "Your browser does not support Web Storage...";
@@ -77,7 +75,7 @@ function updateArray(arr){
 }
 
 function updateCart(){
-    for (let i = 0; i < cartArray.length; i++) {//Looping through all of the items 
+    for (let i = 0; i < cartArray.length; i++) { 
         var div = document.createElement('div');
         div.setAttribute('class', 'item');
         div.setAttribute('data-value', i);
@@ -104,8 +102,20 @@ function updateCart(){
         btn.addEventListener("click", function(){
             cartArray.splice(i,1);
             updateArray(cartArray);
-        });
+        })
+        
+        
     }
+}
+
+function removeItem(x){
+    var buttonList = document.querySelectorAll("button");
+    console.log(buttonList);
+    btn.addEventListener("click", removeItem(this));
+    console.log(x);
+    //cartArray.splice(i,1);
+    //updateArray(cartArray);
+    //updateCart();
 }
 
 function myFunction() {
