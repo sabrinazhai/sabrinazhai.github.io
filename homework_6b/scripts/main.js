@@ -27,7 +27,7 @@ window.onload = function(){
     }
     retrieveCart();
     updateCart();
- 
+    removeItem();
 }
 
 //Retrieving cart information from local stroage
@@ -75,41 +75,53 @@ function updateArray(arr){
 }
 
 function updateCart(){
-    document.querySelector(".cart").innerHTML = "<h1> Your Cart</h1>";
-    for (let i = 0; i < cartArray.length; i++) { 
-        var div = document.createElement('div');
-        div.setAttribute('class', 'item');
-        div.setAttribute('data-value', i);
+    if (document.querySelector(".cart") !== null) {
+        document.querySelector(".cart").innerHTML = "<h1> Your Cart</h1>";
+        for (let i = 0; i < cartArray.length; i++) { 
+            var div = document.createElement('div');
+            div.setAttribute('class', 'item');
+            div.setAttribute('data-value', i);
 
-        var pic = document.createElement("img");
-        pic.setAttribute('src', cartArray[i].photo);
-       
-        var detail = document.createElement('div');
-        detail.innerHTML =  "<h2>" + cartArray[i].name + 
-                            "</h2> Color: " + cartArray[i].color + 
-                            "<br />"+ "Fill: " + cartArray[i].fill ; 
-     
-        var btn = document.createElement("button");
-        btn.innerHTML = "remove item";
-        btn.setAttribute("class", "remove-item")
+            var pic = document.createElement("img");
+            pic.setAttribute('src', cartArray[i].photo);
+           
+            var detail = document.createElement('div');
+            detail.innerHTML =  "<h2>" + cartArray[i].name + 
+                                "</h2> Color: " + cartArray[i].color + 
+                                "<br />"+ "Fill: " + cartArray[i].fill ; 
+         
+            var btn = document.createElement("button");
+            btn.innerHTML = "remove item";
+            btn.setAttribute("class", "remove-item")
 
-        //Add all the created elements on to the page
-        if (document.querySelector(".cart") !== null) {
+            //Add all the created elements on to the page
             document.querySelector(".cart").appendChild(div);  
             div.appendChild(pic);  
             div.appendChild(detail);  
             div.appendChild(btn);
-        }
+            
 
-        btn.addEventListener("click", function(){
-            cartArray.splice(i,1);
-            updateArray(cartArray);
-        })
-        
+            // btn.addEventListener("click", function(){
+            //     cartArray.splice(i,1);
+            //     updateArray(cartArray);
+            // })
+            
+        }
     }
 }
 
-
+function removeItem(){
+    var buttonList = document.getElementsByClassName("remove-item");
+    for (var i = 0; i < buttonList.length; i++) {
+        buttonList[i].addEventListener("click", function(){
+            console.log("are wee working");
+            cartArray.splice(i,1);
+            updateArray(cartArray);
+            // buttonList[i].parentElement.dataset.value
+        });
+    }
+    updateCart();
+}
 
 function myFunction() {
     var x = document.getElementById("navigationbar");
