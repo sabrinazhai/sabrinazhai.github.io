@@ -1,6 +1,6 @@
 var cartArray = [];
 
-/* Changing selection and images */
+//Changing selection and images 
 window.onload = function(){
     const colorsButtons = document.getElementsByClassName("colors");
     const fillButtons = document.getElementsByClassName("fill");
@@ -27,9 +27,10 @@ window.onload = function(){
     }
     retrieveCart();
     updateCart();
-
+ 
 }
 
+//Retrieving cart information from local stroage
 function retrieveCart(){
     if (typeof(Storage) !== "undefined") { 
         if("shoppingCart" in localStorage){
@@ -43,11 +44,10 @@ function retrieveCart(){
 function updateQuantity(){
     if (cartArray.length > 0){
         document.getElementById("cart").innerHTML = cartArray.length + " cart";
-
     }
 }
 
-/* Saving item to the cart into an array */ 
+//Saving item to the cart into an array  
 function addToCart(){
     var photoValue = document.getElementById("product-photo").getAttribute("src");
     var nameValue = document.getElementById("product-name").innerHTML;
@@ -75,6 +75,7 @@ function updateArray(arr){
 }
 
 function updateCart(){
+    document.querySelector(".cart").innerHTML = "<h1> Your Cart</h1>";
     for (let i = 0; i < cartArray.length; i++) { 
         var div = document.createElement('div');
         div.setAttribute('class', 'item');
@@ -90,6 +91,7 @@ function updateCart(){
      
         var btn = document.createElement("button");
         btn.innerHTML = "remove item";
+        btn.setAttribute("class", "remove-item")
 
         //Add all the created elements on to the page
         if (document.querySelector(".cart") !== null) {
@@ -104,19 +106,10 @@ function updateCart(){
             updateArray(cartArray);
         })
         
-        
     }
 }
 
-function removeItem(x){
-    var buttonList = document.querySelectorAll("button");
-    console.log(buttonList);
-    btn.addEventListener("click", removeItem(this));
-    console.log(x);
-    //cartArray.splice(i,1);
-    //updateArray(cartArray);
-    //updateCart();
-}
+
 
 function myFunction() {
     var x = document.getElementById("navigationbar");
