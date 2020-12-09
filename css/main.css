@@ -1675,7 +1675,7 @@ ul.sub-menu li a {
 }
 
 .hov:after{
-    content:'HCI';
+    content:'hci';
     transition: 0.3s
 }
 .hov:hover:after{
