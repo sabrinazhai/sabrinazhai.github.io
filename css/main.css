@@ -183,7 +183,7 @@ hr {
 h1 {
     font-size: 24;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 h2 {
     font-size: 22px;
